@@ -40,7 +40,7 @@ function package_download() {
 
   mkdir -p $location
 
-  package="https://swift.hydranodes.de/v1/${SWIFT_AUTH}/bin/$engine-$version.tgz"
+  package="https://swift.hydranodes.de/v1/AUTH_88b8a024aaf3472e8881ea99cc0e5c8f/bin/$engine-$version.tgz"
 
   curl $package -s -o - | tar xzf - -C $location
 }
